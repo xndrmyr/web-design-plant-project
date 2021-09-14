@@ -52,9 +52,11 @@ function clickHandler(c, index) {
     $("#nav").addClass("animation--back-out");
     document.getElementById("quote").classList.add("animation--fore-out");
     document.getElementById("banner").classList.add("animation--back-out");
-    $("#main--content-wrapper").addClass("main--in");
-    $("#main--content-wrapper").addClass(c);
-    $("#main--top-image").addClass(c + "-img");
+    setTimeout(function(){
+        $("#main--content-wrapper").addClass("main--in");
+        $("#main--content-wrapper").addClass(c);
+        $("#main--top-image").addClass(c + "-img");
+    }, 250)
 }
 
 function backHandler() {
