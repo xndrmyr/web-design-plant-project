@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <ul id="nav-list">
+                <li onclick="clickHandler('croton', 0)">Croton</li>
+                <li onclick="clickHandler('dracaena', 1)">Dracaena</li>
+                <li onclick="clickHandler()">Orchid</li>
+                <li onclick="clickHandler()">Pothos</li>
+                <li onclick="clickHandler()">Monstera</li>
+                <li onclick="clickHandler()">Anthurium</li>
+                <li onclick="clickHandler()">Snake Plant</li>
+            </ul>
+        </nav>
+        <div class="hero-wrapper">
+            <div class="hero-image" id="banner"><img src="images/hero-houseplant.jpg" alt=""></div>
+            <div class="hero-quote" id="quote">Green fingers are the extension of a <span>verdant</span> heart.</div>
+        </div>
+    </header>
+    <main>
+        <div id="main--content-wrapper">
+            <div id="back-button" onclick="backHandler()"><i class="fas fa-arrow-circle-left"></i></div>
+            <div id="main--plant-name"><div id="name"></div><span><div id="pronounce"></div><em id="sci-name"></em></span></div>
+            <div class="main--top-wrapper">
+                <div id="main--top-image">
+                </div>
+            </div>
+            <div id="main--info">
+                <div id="main--info-content">
+                    <h2>Care instructions</h2>
+                </div>
+                <div id="main--info-icons">
+                    <div class="icon-wrap">
+                        <div id="main--info-icon1"></div>
+                        <div id="main--info-blurb1"><h3 id="blurb1"></h3> <div id="blurbDescription1"></div></div>
+                    </div>
+                    <div class="icon-wrap">
+                        <div id="main--info-icon2"></div>
+                        <div id="main--info-blurb2"><h3 id="blurb2"></h3> <div id="blurbDescription2"></div></div>
+                    </div>
+                    <div class="icon-wrap">
+                        <div id="main--info-icon3"></div>
+                        <div id="main--info-blurb3"><h3 id="blurb3"></h3> <div id="blurbDescription3"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="js/script.js"></script>
+
+</html>

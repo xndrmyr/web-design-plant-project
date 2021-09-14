@@ -1,0 +1,41 @@
+[{
+        "name": "Croton",
+        "pronunciation": "&nbsp;[<strong>kroht</strong>-n]",
+        "scientific": "&nbsp;Codiaeum variegatum",
+        "blurbIcons": [
+            "<i class='fas fa-skull-crossbones'></i>",
+            "<i class='far fa-calendar-check'></i>",
+            "<i class='fas fa-sun'></i>"
+        ],
+        "blurb": [
+            "Poisonous",
+            "Perrenial",
+            "Solar hog"
+        ],
+        "blurbInfo": [
+            "Hide from pets!",
+            "Regrows every spring",
+            "Requires significant sunlight"
+        ]
+    },
+    {
+        "name": "Dracaena",
+        "pronunciation": "&nbsp;[druh-<strong>see</strong>-nuh]",
+        "scientific": "&nbsp;Dracaena deremensis",
+        "blurbIcons": [
+            "<i class='fas fa-skull-crossbones'></i>",
+            "<i class='far fa-calendar-check'></i>",
+            "<i class='fas fa-sun'></i>"
+        ],
+        "blurb": [
+            "Poisonous",
+            "Perrenial",
+            "Solar fluid"
+        ],
+        "blurbInfo": [
+            "Hide from pets!",
+            "Regrows every spring",
+            "Tolerates full sun to partial shade"
+        ]
+    }
+]
