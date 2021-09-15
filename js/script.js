@@ -9,11 +9,6 @@ plantRequest.onload = function () {
 };
 plantRequest.send();
 
-function renderHTML(data) {
-    console.log(data)
-
-}
-
 function clickHandler(c, index) {
     var name = plantData[index].name;
     var pro = plantData[index].pronunciation;
@@ -30,29 +25,45 @@ function clickHandler(c, index) {
 
     currentView = c;
 
-    document.getElementById("name").insertAdjacentHTML("afterbegin", name)
-    document.getElementById("pronounce").insertAdjacentHTML("afterbegin", pro)
-    document.getElementById("sci-name").insertAdjacentHTML("afterbegin", sci)
-    document.getElementById("main--info-icon1").insertAdjacentHTML("afterbegin", icon1)
-    document.getElementById("main--info-icon2").insertAdjacentHTML("afterbegin", icon2)
-    document.getElementById("main--info-icon3").insertAdjacentHTML("afterbegin", icon3)
-    document.getElementById("blurb1").insertAdjacentHTML("afterbegin", blurb1)
-    document.getElementById("blurb2").insertAdjacentHTML("afterbegin", blurb2)
-    document.getElementById("blurb3").insertAdjacentHTML("afterbegin", blurb3)
-    document.getElementById("blurbDescription1").insertAdjacentHTML("afterbegin", blurbInfo1)
-    document.getElementById("blurbDescription2").insertAdjacentHTML("afterbegin", blurbInfo2)
-    document.getElementById("blurbDescription3").insertAdjacentHTML("afterbegin", blurbInfo3)
+    $("#name").html(name)
+    $("#pronounce").html(pro)
+    $("#sci-name").html(sci)
+    $("#main--info-icon1").html(icon1)
+    $("#main--info-icon2").html(icon2)
+    $("#main--info-icon3").html(icon3)
+    $("#blurb1").html(blurb1)
+    $("#blurb2").html(blurb2)
+    $("#blurb3").html(blurb3)
+    $("#blurbDescription1").html(blurbInfo1)
+    $("#blurbDescription2").html(blurbInfo2)
+    $("#blurbDescription3").html(blurbInfo3)
+
+    if (plantData[index].plantingInfo) {
+        for (var i = 0; i < plantData[index].plantingInfo.length; i++) {
+            $("#planting-list").append(
+                "<li><i class='fab fa-envira'></i>" + plantData[index].plantingInfo[i] + "</li>"
+            )
+        }
+    }
+
+    if (plantData[index].careInfo) {
+        for (var i = 0; i < plantData[index].careInfo.length; i++) {
+            $("#care-list").append(
+                "<li><i class='fab fa-envira'></i>" + plantData[index].careInfo[i] + "</li>"
+            )
+        }
+    }
 
     $("#nav").removeClass("animation--back-in");
-    document.getElementById("quote").classList.remove("animation--fore-in");
-    document.getElementById("banner").classList.remove("animation--back-in");
+    $("#quote").removeClass("animation--fore-in");
+    $("#banner").removeClass("animation--back-in");
     $("#main--content-wrapper").removeClass("main--out");
     $("#main--content-wrapper").removeClass(currentView);
     $("#main--top-image").removeClass(currentView + "-img");
     $("#nav").addClass("animation--back-out");
-    document.getElementById("quote").classList.add("animation--fore-out");
-    document.getElementById("banner").classList.add("animation--back-out");
-    setTimeout(function(){
+    $("#quote").addClass("animation--fore-out");
+    $("#banner").addClass("animation--back-out");
+    setTimeout(function () {
         $("#main--content-wrapper").addClass("main--in");
         $("#main--content-wrapper").addClass(c);
         $("#main--top-image").addClass(c + "-img");
@@ -63,29 +74,31 @@ function backHandler() {
 
     $("#main--content-wrapper").removeClass("main--in");
     $("#main--content-wrapper").removeClass(currentView);
-    $("#main--top-image").removeClass(currentView + "-img");
     $("#main--content-wrapper").addClass("main--out");
     setTimeout(function () {
         $("#nav").removeClass("animation--back-out");
-        document.getElementById("quote").classList.remove("animation--fore-out");
-        document.getElementById("banner").classList.remove("animation--back-out");
+        $("#quote").removeClass("animation--fore-out");
+        $("#banner").removeClass("animation--back-out");
         $("#nav").addClass("animation--back-in");
-        document.getElementById("quote").classList.add("animation--fore-in");
-        document.getElementById("banner").classList.add("animation--back-in");
+        $("#quote").addClass("animation--fore-in");
+        $("#banner").addClass("animation--back-in");
+        $("#main--top-image").removeClass(currentView + "-img");
         currentView = "";
+        $("#planting-list").html('');
+        $("#care-list").html('');
     }, 1500)
-    setTimeout(function(){
-        document.getElementById("name").innerHTML = "";
-        document.getElementById("pronounce").innerHTML = "";
-        document.getElementById("sci-name").innerHTML = "";
-        document.getElementById("main--info-icon1").innerHTML = "";
-        document.getElementById("main--info-icon2").innerHTML = "";
-        document.getElementById("main--info-icon3").innerHTML = "";
-        document.getElementById("blurb1").innerHTML = "";
-        document.getElementById("blurb2").innerHTML = "";
-        document.getElementById("blurb3").innerHTML = "";
-        document.getElementById("blurbDescription1").innerHTML = "";
-        document.getElementById("blurbDescription2").innerHTML = "";
-        document.getElementById("blurbDescription3").innerHTML = "";
+    setTimeout(function () {
+        $("#name").html('');
+        $("#pronounce").html('');
+        $("#sci-name").html('');
+        $("#main--info-icon1").html('');
+        $("#main--info-icon2").html('');
+        $("#main--info-icon3").html('');
+        $("#blurb1").html('');
+        $("#blurb2").html('');
+        $("#blurb3").html('');
+        $("#blurbDescription1").html('');
+        $("#blurbDescription2").html('');
+        $("#blurbDescription3").html('');
     }, 3000)
 }

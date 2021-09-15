@@ -8,16 +8,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
+        <div id="hero-vid">
+            <div class="vid-overlay"></div>
+            <video autoplay muted loop src="../images/rayleaf.mp4" frameborder="0"></video>
+        </div>
         <nav id="nav">
             <ul id="nav-list">
                 <li onclick="clickHandler('croton', 0)">Croton</li>
                 <li onclick="clickHandler('dracaena', 1)">Dracaena</li>
-                <li onclick="clickHandler()">Orchid</li>
+                <li onclick="clickHandler('orchid', 2)">Orchid</li>
                 <li onclick="clickHandler()">Pothos</li>
                 <li onclick="clickHandler()">Monstera</li>
                 <li onclick="clickHandler()">Anthurium</li>
@@ -32,27 +37,52 @@
     <main>
         <div id="main--content-wrapper">
             <div id="back-button" onclick="backHandler()"><i class="fas fa-arrow-circle-left"></i></div>
-            <div id="main--plant-name"><div id="name"></div><span><div id="pronounce"></div><em id="sci-name"></em></span></div>
+            <div id="main--plant-name">
+                <div id="name"></div><span>
+                    <div id="pronounce"></div><em id="sci-name"></em>
+                </span>
+            </div>
             <div class="main--top-wrapper">
                 <div id="main--top-image">
                 </div>
             </div>
             <div id="main--info">
                 <div id="main--info-content">
-                    <h2>Care instructions</h2>
+                    <div id="planting">
+                        <div id="planting-header">Planting instructions</div>
+                        <ul id="planting-list">
+
+                        </ul>
+                    </div>
+                    <div id="care">
+                        <div id="care-header">Care instructions</div>
+                        <ul id="care-list">
+
+                        </ul>
+                    </div>
+
                 </div>
                 <div id="main--info-icons">
                     <div class="icon-wrap">
                         <div id="main--info-icon1"></div>
-                        <div id="main--info-blurb1"><h3 id="blurb1"></h3> <div id="blurbDescription1"></div></div>
+                        <div id="main--info-blurb1">
+                            <h3 id="blurb1"></h3>
+                            <div id="blurbDescription1"></div>
+                        </div>
                     </div>
                     <div class="icon-wrap">
                         <div id="main--info-icon2"></div>
-                        <div id="main--info-blurb2"><h3 id="blurb2"></h3> <div id="blurbDescription2"></div></div>
+                        <div id="main--info-blurb2">
+                            <h3 id="blurb2"></h3>
+                            <div id="blurbDescription2"></div>
+                        </div>
                     </div>
                     <div class="icon-wrap">
                         <div id="main--info-icon3"></div>
-                        <div id="main--info-blurb3"><h3 id="blurb3"></h3> <div id="blurbDescription3"></div></div>
+                        <div id="main--info-blurb3">
+                            <h3 id="blurb3"></h3>
+                            <div id="blurbDescription3"></div>
+                        </div>
                     </div>
                 </div>
             </div>
