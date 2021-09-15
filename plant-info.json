@@ -9,13 +9,27 @@
         ],
         "blurb": [
             "Poisonous",
-            "Perrenial",
+            "Perennial",
             "Solar hog"
         ],
         "blurbInfo": [
             "Hide from pets!",
             "Regrows every spring",
             "Requires significant sunlight"
+        ],
+        "plantingInfo": [
+            "When choosing a container, be aware that the plant grows upright and may eventually become top heavy.",
+            "Use potting soil that drains well. Croton thrive when moist, not wet.",
+            "In warm and humid climates, Crotons can be grown outdoors. When the temperatures drop to around 50&deg;F, bring them inside."
+        ],
+        "careInfo": [
+            "Crotons prefer it sunny, so place in a window with plenty of light. If it isn't getting enough light, newer leaves will be dull in color.",
+            "Soil should be moist, and should be dried out before rewatering.",
+            "If humidity is low, mist the leaves once a week, or keep a tray of wet gravel near the plant.",
+            "Wipe the leaves with a damp cloth a couple times a month as Croton leaves can attract dust.",
+            "Fertilize in spring and summer.",
+            "New plants can be propagated from 4- to 6-inch stem clippings.",
+            "In the spring, replant if the croton is too large for it's pot."
         ]
     },
     {
@@ -29,13 +43,57 @@
         ],
         "blurb": [
             "Poisonous",
-            "Perrenial",
+            "Perennial",
             "Solar fluid"
         ],
         "blurbInfo": [
             "Hide from pets!",
             "Regrows every spring",
             "Tolerates full sun to partial shade"
+        ],
+        "plantingInfo": [
+            "When choosing a container, be aware that the plant grows upright.",
+            "Use potting soil that drains well. Soil should never be soggy.",
+            "Dracaena is sensitive to fluoride, so use purified water."
+        ],
+        "careInfo": [
+            "Filtered indoor light is best for dracaena, but a semi-shade spot works as well.",
+            "Never place dracaena in direct sunlight or the rays will scorch the foliage.",
+            "Dracaena require less water than most houseplants, hydrate by misting leaves and soil with water.",
+            "Temperatures below 55&deg;F will harm the plant.",
+            "Wiping dust off the leaves once or twice a week will help the plant absorb oxygen."
+        ]
+    },
+    {
+        "name": "Orchid",
+        "pronunciation": "&nbsp;[<strong>Or</strong>-kuhd]",
+        "scientific": "&nbsp;Orchidaceae",
+        "blurbIcons": [
+            "<i class='fas fa-skull-crossbones'></i>",
+            "<i class='far fa-calendar-check'></i>",
+            "<i class='fas fa-sun'></i>"
+        ],
+        "blurb": [
+            "Semi-safe",
+            "Perennial",
+            "Solar fluid"
+        ],
+        "blurbInfo": [
+            "Some varieties can be poisonous",
+            "Most varieties grow every spring",
+            "Tolerates medium to high light"
+        ],
+        "plantingInfo": [
+            "When choosing a container, think about double-potting with a slightly larger pot. Cover the bottom of the larger pot with pebbles that catch drainage and provide humidity.",
+            "Use potting soil that drains well. Soil should never be soggy.",
+            "Dracaena is sensitive to fluoride, so use purified water."
+        ],
+        "careInfo": [
+            "Filtered indoor light is best for dracaena, but a semi-shade spot works as well.",
+            "Never place dracaena in direct sunlight or the rays will scorch the foliage.",
+            "Dracaena require less water than most houseplants, hydrate by misting leaves and soil with water.",
+            "Temperatures below 55&deg;F will harm the plant.",
+            "Wiping dust off the leaves once or twice a week will help the plant absorb oxygen."
         ]
     }
 ]
